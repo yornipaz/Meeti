@@ -1,0 +1,32 @@
+@use "abstract/mixin" as m;
+@use "abstract/variable" as v;
+
+.navigation {
+  background-color: v.$primary;
+  padding: 0.3rem 0;
+  margin: 2rem 0;
+  &__border {
+    border-block: 2px dashed v.$white;
+    padding: 1.7rem 0;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include m.screen("md") {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &__link {
+    color: v.$white;
+    font-size: 2.4rem;
+    margin-bottom: 1.2rem;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    @include m.screen("md") {
+      margin-bottom: 0;
+    }
+  }
+}
