@@ -2,32 +2,5 @@
 @use "abstract/mixin" as m;
 
 .footer {
-  &__wrapper {
-    @include m.screen("md") {
-      @include m.grid(3, 2rem);
-    }
-  }
-  &__item {
-    text-align: center;
-    &:last-of-type {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  &__title {
-    @include m.title;
-    font-size: 3.4rem;
-  }
-  &__text {
-    line-height: 1.8;
-  }
-  &__copy {
-    text-align: center;
-    max-width: 120rem;
-    padding: 2rem;
-    margin: 2rem auto 0 auto;
-    border-top: 1px solid darken($color: v.$light-grey, $amount: 10%);
-    color: v.$grey;
-  }
+ 
 }

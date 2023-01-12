@@ -1,0 +1,22 @@
+@use "abstract/mixin" as m;
+@use "abstract/variable" as v;
+
+.hero {
+  min-height: 60rem;
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &__text {
+    max-width: 60rem;
+    color: v.$white;
+  }
+  &__link {
+    @include m.button(v.$tertiary,v.$white);
+  }
+}

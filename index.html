@@ -5,30 +5,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carolina Space</title>
-    
+    <title>Meeti</title>
+
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 
 <body>
-    <header class="header ">
-      
+    <header class="header container">
+        <div class="header__logo"><a href="index.html">
+                <picture>
+                    <source srcset="dist/img/logo.avif" type="image/avif">
+                    <source srcset="dist/img/logo.webp " type="image/webp">
+                    <source srcset="dist/img/logo.png" type="image/png">
+                    <img loading="lazy" decoding="async" src="dist/img/logo.png" alt="imagen logo">
+                </picture>
+            </a></div>
+        <nav class="navigation"><a href="#" class="navigation__link navigation__link--create ">Crear Grupo</a><a
+                href="#" class="navigation__link">Iniciar Sesion</a><a href="#" class="navigation__link">Registrar</a>
+        </nav>
+
 
     </header>
+    <section class="hero">
+        <h1 class="hero__text">Encuentra o Crea un grupo para compartir lo que mas te gusta</h1>
+        <a href="#" class="hero__link">Obtener una Cuenta</a>
+    </section>
+    <section class="search">
+        <h2 class="search__title text-center">Busca un grupo en tu cuidad</h2>
+        <div class="container">
+            <form action="" class="form"><select class="form__control">
+                    <option default> --selecione--</option>
+                    <option>Programacion </option>
+                    <option>Diseno</option>
+                    <option>Negocios</option>
+                    <option>Moda</option>
+                    <option>Ejercicio y salud</option>
+                    <option>Fotografia</option>
+                    <option>Diseno Interior</option>
+                    <option>Cafe</option>
+                    <option>ine</option>
+                    <option>Libros</option>
+                    <option>Emprendimiento</option>
 
-    <div class="navigation">
-    
-    </div>
+                </select>
+                <input type="text" class="form__control" placeholder="Nombre del Evento">
+                <input type="text" class="form__control" placeholder="Ciudad o Pais">
+                <input type="submit" value="Buscar">
 
-  
+            </form>
+        </div>
+    </section>
+
+
+
+
     <main class=" ">
-       
+
     </main>
 
     <footer class="footer">
-      
+
     </footer>
-   
+
     <script src="src/js/main.js"></script>
 </body>
 
