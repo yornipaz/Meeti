@@ -1,0 +1,22 @@
+@use "abstract/mixin" as m;
+@use "abstract/variable" as v;
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  &__img {
+    width: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &__event,
+  &__name {
+    margin: 0.5rem 0;
+    color: v.$grey;
+    font-size: 1.6rem;
+  }
+  &__event {
+    font-weight: 700;
+  }
+}

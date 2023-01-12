@@ -1,0 +1,15 @@
+@use "abstract/mixin" as m;
+@use "abstract/variable" as v;
+.event {
+  border: 1px solid v.$light-grey;
+  &__content {
+    padding: 2rem;
+  }
+  &__date {
+    font-size: 1.4rem;
+  }
+  &__name {
+    color: v.$grey;
+    margin: 1rem 0;
+  }
+}

@@ -18,6 +18,7 @@
   }
   &__submit{
     @include m.button(v.$primary,v.$white);
+   
     margin-top: 0;
 
   }

@@ -1,0 +1,17 @@
+@use "abstract/mixin" as m;
+@use "abstract/variable" as v;
+.events {
+  padding: 5rem 0;
+  &__title {
+    margin: 0;
+    color: v.$grey;
+  }
+ 
+  &__wrapper {
+    margin-top: 2rem;
+    @include m.grid(1, 2rem);
+    @include m.screen("md") {
+      @include m.grid(3, 2rem);
+    }
+  }
+}

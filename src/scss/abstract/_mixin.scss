@@ -131,11 +131,12 @@
 }
 
 @mixin button($color, $text) {
+ 
   background-color: $color;
-  padding: 2rem;
+  padding: 1.5rem 4rem;
   color: $text;
   margin-top: 2rem;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 400;
   display: inline-block;
   font-weight: 700;
@@ -143,7 +144,7 @@
   text-transform: uppercase;
   transition-property: background-color;
   transition-duration: 0.3s;
-  text-align: center;
+
 
   @include screen("md") {
     width: auto;
