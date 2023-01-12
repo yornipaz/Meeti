@@ -6,7 +6,7 @@
   align-items: center;
   gap: 2rem;
   &__img {
-    width: 10rem;
+    width: 8rem;
     border-radius: 50%;
     overflow: hidden;
   }
@@ -15,6 +15,9 @@
     margin: 0.5rem 0;
     color: v.$grey;
     font-size: 1.6rem;
+  }
+  &__name {
+    font-size: 2rem;
   }
   &__event {
     font-weight: 700;

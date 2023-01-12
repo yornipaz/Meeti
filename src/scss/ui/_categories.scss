@@ -1,0 +1,27 @@
+@use "abstract/mixin" as m;
+@use "abstract/variable" as v;
+.categories {
+  background-color: v.$light-grey;
+  padding: 5rem 0;
+  &__title {
+    margin: 0;
+    color: v.$grey;
+  }
+  &__wrapper {
+    margin-top: 5rem;
+    @include m.grid(1, 4rem);
+    @include m.screen("md") {
+      @include m.grid(2, 2rem);
+    }
+    @include m.screen("lg") {
+      @include m.grid(3, 2rem);
+    }
+  }
+}
+.category {
+  &__name {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+  }
+}
