@@ -1,0 +1,11 @@
+@use "abstract/mixin" as m;
+@use "abstract/variable" as v;
+
+.search {
+  background-color: v.$light-grey;
+  padding: 5rem 0;
+  &__title {
+    margin: 0;
+    color: v.$grey;
+  }
+}

@@ -1,0 +1,24 @@
+@use "abstract/mixin" as m;
+@use "abstract/variable" as v;
+
+.formSearch {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  @include m.screen('md') {
+    @include m.grid(4,2rem );
+  }
+  &__control {
+    padding: 1rem;
+    border: 1px solid lighten($color: v.$grey, $amount: 50%);
+    margin-bottom: 2rem;
+    @include m.screen('md') {
+        margin-bottom: 0;
+    }
+  }
+  &__submit{
+    @include m.button(v.$primary,v.$white);
+    margin-top: 0;
+
+  }
+}
