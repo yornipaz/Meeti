@@ -1,5 +1,5 @@
-@use "abstract/mixin" as m;
-@use "abstract/variable" as v;
+@use "../../abstract/mixin" as m;
+@use "../../abstract/variable" as v;
 
 .search {
   background-color: v.$light-grey;

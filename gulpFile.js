@@ -41,7 +41,7 @@ function dev() {
         server: "."
     }); 
     watch('src/scss/**/*.scss', css);
-    watch('src/scss/page/*.scss', pagesCss);
+    watch('src/scss/page/**/*.scss', pagesCss);
     watch('src/img/**/*', image);
     watch("./*.html").on('change', browserSync.reload);
     watch("src/js/*.js").on('change', browserSync.reload);
@@ -66,7 +66,7 @@ exports.versionWebp = versionWebp;
 exports.versionAvif = versionAvif;
 exports.pagesCss = pagesCss;
 
-exports.default = series(image, versionWebp, versionAvif, css, dev);
+exports.default = series(image, versionWebp, versionAvif, css,pagesCss, dev);
 
 
 

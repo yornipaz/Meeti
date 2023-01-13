@@ -1,0 +1,21 @@
+@use "../../abstract/mixin" as m;
+@use "../../abstract/variable" as v;
+.map {
+  grid-column: 5 / 7;
+  color: v.$white;
+  text-align: center;
+  &__content {
+    background-color: v.$secondary;
+    padding: 2rem;
+  }
+
+
+
+  &__text {
+    font-size: 1.6rem;
+    span {
+      font-weight: 700;
+      margin-right: 0.5rem;
+    }
+  }
+}

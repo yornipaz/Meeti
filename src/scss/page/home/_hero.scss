@@ -1,9 +1,9 @@
-@use "abstract/mixin" as m;
-@use "abstract/variable" as v;
+@use "../../abstract/mixin" as m;
+@use "../../abstract/variable" as v;
 
 .hero {
   min-height: 60rem;
-  background-image: url(../img/hero.jpg);
+  background-image: url(../../img/hero.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

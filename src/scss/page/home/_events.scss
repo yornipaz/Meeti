@@ -1,5 +1,5 @@
-@use "abstract/mixin" as m;
-@use "abstract/variable" as v;
+@use "../../abstract/mixin" as m;
+@use "../../abstract/variable" as v;
 .events {
   padding: 5rem 0;
   &__title {

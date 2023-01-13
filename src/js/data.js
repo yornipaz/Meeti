@@ -8,7 +8,7 @@ const categories = [
   "Cocina",
   "Diseno Interior",
   "Cafe",
-  "cine",
+  "Cine",
   "Libros",
   "Emprendimiento",
 ];
@@ -21,7 +21,7 @@ const events = [
   },
   {
     id: 2,
-    name: "Bitcoin y otras criptomonedas",
+    name: "Bitcoin y  criptomonedas",
     date: "Martes 24 de Octubre de 2022",
     author: { name: "Liliana Paz Mina", profileId: 2 },
   },

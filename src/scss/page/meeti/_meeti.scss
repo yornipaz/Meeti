@@ -1,0 +1,15 @@
+@use "../../abstract/mixin" as m;
+@use "../../abstract/variable" as v;
+
+.meeti {
+  padding: 5rem 0;
+
+  &__title {
+    text-transform: uppercase;
+  }
+  &__wrapper {
+    @include m.screen("md") {
+      @include m.grid(6, 2rem);
+    }
+  }
+}

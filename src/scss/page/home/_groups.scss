@@ -1,0 +1,35 @@
+@use "../../abstract/mixin" as m;
+@use "../../abstract/variable" as v;
+.groups {
+  background-image: linear-gradient(
+    to bottom,
+    v.$primary 0%,
+    v.$primary 50%,
+    v.$secondary 50%,
+    v.$secondary 100%
+  );
+  color: v.$white;
+  padding: 5rem 0;
+  @include m.screen("md") {
+    background-image: linear-gradient(
+      to right,
+      v.$primary 0%,
+      v.$primary 50%,
+      v.$secondary 50%,
+      v.$secondary 100%
+    );
+  }
+  &__wrapper {
+    @include m.grid(1);
+    @include m.screen("md") {
+      @include m.grid(2);
+    }
+  }
+  &__title {
+    font-size: 3rem;
+  }
+  &__text {
+    font-size: 2.4rem;
+    line-height: 2;
+  }
+}

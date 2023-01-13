@@ -1,0 +1,13 @@
+@use "../../abstract/mixin" as m;
+@use "../../abstract/variable" as v;
+.wordpress {
+  grid-column: 1 / 5;
+  
+
+  &__text {
+    font-size: 1.6rem;
+    color: v.$grey;
+  
+    line-height: 1.6;
+  }
+}
