@@ -8,6 +8,10 @@
     text-transform: uppercase;
   }
   &__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+
     @include m.screen("md") {
       @include m.grid(6, 2rem);
     }
